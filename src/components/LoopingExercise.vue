@@ -9,23 +9,23 @@
                         object to put the value into our html.</p>
                     <p>Then use the index to print the players place in the collection.</p>
                     <!-- add the v-for to player-card -->
-                    <div class="player-card text-center">
+                    <div class="player-card text-center" v-for="player in players">
                         <h5> {{
-                            <!--code here--> }}</h5>
+                            player.photo}}</h5>
                         <div>
-                            <img class="img" src="" />
+                            <img class="img" src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=bloom-blossom-flora-39517.jpg&fm=jpg" />
                         </div>
                         <div>
                             <span>{{
-                                <!--code here-->}}</span>
+                                player.name}}</span>
                         </div>
                         <div>
                             <span>{{
-                                <!--code here--> }}</span>
+                                player.position}}</span>
                         </div>
                         <div>
                             <span>{{
-                                <!--code here--> }}</span>
+                                player.number}}</span>
                         </div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
                         and value contained at that key.</p>
                     <div class="blog" v-for="(value, key) in blog">
                         <p>{{
-                            <!--code here-->}}: {{
-                            <!--code here-->}}</p>
+                            key}}: {{
+                            value}}</p>
                     </div>
                 </div>
             </div>
