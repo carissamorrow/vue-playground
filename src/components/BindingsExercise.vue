@@ -18,7 +18,7 @@
                         each time the value changes.</p>
                     <!-- add a v-model to this input below called "myName"-->
                     <input>
-                    <p> {{"myName"}}</p>
+                    <p> Hello {{"myName"}}</p>
                 </div>
                 <div class="border p-1">
                     <h5>Class Binding</h5>
